@@ -62,6 +62,10 @@ const Container = styled.div`
                 margin: 0;
                 line-height: 65px;
             }
+
+            p{
+                color: #b3aeae;
+            }
         }
     }
 
