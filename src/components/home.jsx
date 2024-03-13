@@ -1,6 +1,7 @@
 import React from 'react'
 import DashboardImage from '../assets/m1.jpg'
 import styled from 'styled-components'
+import { Link } from 'react-scroll'
 
 
 
@@ -15,7 +16,9 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-around;
-        /* background-color: #172eff; */
+        background-color: transparent;
+        position: fixed;
+        z-index: 12;
         width: 100%;
 
         ul{
@@ -25,7 +28,7 @@ const Container = styled.div`
             gap: 20px;
 
             li a{
-
+                cursor: pointer;
                 color: #1e1d1d;
                 text-decoration: none;
             }
@@ -45,12 +48,13 @@ const Container = styled.div`
         align-items: end;
         width: 100%;
 
-        button{
+        a{
             padding: 10px 30px;
             border: none;
             background-color: #172eff;
             color: #fff;
             font-family: inherit;
+            text-decoration: none;
         }
 
         div{
@@ -74,7 +78,7 @@ const Container = styled.div`
         padding: 0rem;
         place-self: center;
         position: relative;
-        top: -10%;
+        top: 3%;
         img{
             width: 100%;
             height: 100%;
@@ -86,17 +90,17 @@ const Container = styled.div`
 
 function Home() {
   return (
-    <Container>
+    <Container id='home'>
         <div className="header">
             <div className="logo">
                 <h2>FVISION</h2>
             </div>
             <div className="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><Link to="home" smooth={true} duration={1000}>Home</Link></li>
+                    <li><Link to="feature" smooth={true} duration={1000}>Features</Link></li>
+                    <li><Link to="about" smooth={true} duration={1000}>About</Link></li>
+                    <li><Link to="contact" smooth={true} duration={1000}>Contact</Link></li>
                 </ul>
             </div>
         </div>
@@ -109,7 +113,7 @@ function Home() {
             <h1>Welcome to Finance Vision</h1>
             <h2>Empower Your Financial Journey</h2>
             <p>Finance Vision is your trusted partner in managing and optimizing your finances. With intuitive tools and insightful analytics, we help you take control of your money and achieve your financial goals.</p>
-            <button>Get Started</button>
+            <a href="https://finance-vision.vercel.app/" target="_blank" rel="noopener noreferrer">Get Started</a>
         </div>
 
         </div>

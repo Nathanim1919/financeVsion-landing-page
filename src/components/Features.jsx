@@ -47,7 +47,7 @@ const FeatureContainer = styled.div`
 
 export default function Features() {
   return (
-    <Container>
+    <Container id='feature'>
         <div className='header'>
         <h1>Features</h1>
         </div>

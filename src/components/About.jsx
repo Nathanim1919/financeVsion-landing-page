@@ -1,6 +1,12 @@
 import React from 'react';
 import aboutImage from '../assets/about.png'
+import myImage from '../assets/me.jpg'
 import styled from 'styled-components';
+import { FaInstagram } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+import { CgWebsite } from "react-icons/cg";
+
 
 
 const Container = styled.div`
@@ -14,9 +20,121 @@ margin: auto;
         .image{
             img{
                 width: 100%;
-            }
+                height: 100%;
+              }
+              
         
         }
+    }
+
+    .footer{
+      margin-top: 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 0;
+
+      .links{
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+
+        a{
+          background-color: blue;
+          color: #fff;
+          padding: 0.4rem 1rem;
+          text-decoration: none;
+
+        }
+      }
+
+
+      p{
+        font-size: 1rem;
+        font-weight: 400;
+       
+        
+      }
+      a{
+        gap: .4rem;
+        display: flex;
+        align-items: center;
+        color: #1f1e1e;
+        cursor: pointer;
+       
+      }
+    }
+
+    .team-member{
+      display: flex;
+      justify-content: space-between;
+
+      img{
+          box-shadow: 0 10px 40px #00000060;
+        }
+
+      .content{
+        padding: 0 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >*{
+          margin:0;
+        }
+
+       
+
+        .contactme{
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          width: 100%;
+          margin-top: 1rem;
+
+          div.social{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+            gap: 2rem;
+            width: 100%;
+            margin-top: 1rem;
+
+            a{
+              color: #1f1e1e;
+              font-size: 1.5rem;
+              cursor: pointer; 
+            }
+          }
+
+          
+          >*{
+            margin:0;
+          }
+        }
+
+        div{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 1rem;
+
+          >*{
+            margin:0;
+          }
+        }
+        h3{
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        p{
+          font-size: 1rem;
+          font-weight: 400;
+        }
+      
+      }
     }
 `
 
@@ -42,17 +160,40 @@ const AboutSection = () => {
             <img src={aboutImage} alt="About Us" />
         </div>
       </div>
-      <div className="teams">
-            <h2>Meet the Team</h2>
-            <ul>
-              <li><a href="https://www.linkedin.com/in/team-member-1/" target="_blank" rel="noopener noreferrer">LinkedIn - Team Member 1</a></li>
-              <li><a href="https://github.com/team-member-1" target="_blank" rel="noopener noreferrer">GitHub - Team Member 1</a></li>
-              <li><a href="https://twitter.com/team_member_1" target="_blank" rel="noopener noreferrer">Twitter - Team Member 1</a></li>
-              {/* Add similar links for other team members */}
-            </ul>
-            <p>
-              Explore our individual profiles to learn more about our expertise and contributions to the project. For code collaboration and contributions, visit our <a href="https://github.com/team-name/project-name" target="_blank" rel="noopener noreferrer">GitHub repository</a>.
-            </p>
+      <div className="teams" id='contact'>
+              <h2>Meet the Team</h2>
+              <div className="team-member">
+                <div>
+                   <img src={myImage} alt="Team Member" />
+                </div>
+                <div className="content">
+                  <div>
+                    <h3>Nathanim Tadele</h3>
+                    <p>Full Stack Developer</p>
+                  </div>
+                  <div>
+                    <p>Highly motivated Full Stack Developer with a Computer Science degree seeking to leverage backend development expertise. Currently enrolled in the Full Stack Software Engineering program at ALX Africa to further specialize in back-end technologies. Proficient in JavaScript, Node.js, the MERN stack </p>
+                    <div className="contactme">
+                      <h2>Contact me</h2>
+                      <div className="social">
+                        <a href="https://www.instagram.com/na.tha.n21/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                        <a href="https://www.linkedin.com/in/nathanim-tadele-762099247/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                        <a href="https://www.github.com/Nathanim1919" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div className="footer">
+                  <p>
+                    For code collaboration and contributions, visit our 
+                  </p>
+                  <div className="links">
+                    <a href="https://github.com/Nathanim1919/FinanceVision" target="_blank" rel="noopener noreferrer"><FaGithub/>GitHub repository</a>.
+                    <a href="https://finance-vision.vercel.app/" target="_blank" rel="noopener noreferrer"><CgWebsite/>Live Preview</a>.
+                  </div>
+                </div>
           </div>
     </Container>
   );
