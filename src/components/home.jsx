@@ -118,6 +118,18 @@ const Container = styled.div`
             height: 100%;
             box-shadow: 0px 5px 30px #00000031;
         }
+
+        @media screen and (max-width:768px){
+            width: 98vw;
+            top: 0%;
+            overflow: hidden;
+
+            img{
+                width: 200%;
+                height: 200%;
+                box-shadow: 0px 5px 30px #00000031;
+        }
+        }
     
     }
 `
