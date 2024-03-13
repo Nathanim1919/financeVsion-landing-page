@@ -53,7 +53,7 @@ const Container = styled.div`
 
 
     .banner{
-        background: linear-gradient(to bottom, transparent 0%, #0000009c 45%, #000000cf 70%, #000000e1 95%, #000000 100%);
+        background: linear-gradient(to bottom, transparent 0%, #0000009c 55%, #000000cf 80%, #000000e1 95%, #000000 100%);
         color: #fff;
         position: absolute;
         bottom: 0;
