@@ -121,7 +121,7 @@ const Container = styled.div`
 
         @media screen and (max-width:768px){
             width: 98vw;
-            top: 0%;
+            top: -6%;
             overflow: hidden;
 
             img{
