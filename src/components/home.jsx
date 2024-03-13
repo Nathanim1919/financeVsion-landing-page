@@ -2,6 +2,7 @@ import React from 'react'
 import DashboardImage from '../assets/m1.jpg'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
+import { IoMdMenu } from "react-icons/io";
 
 
 
@@ -16,16 +17,31 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-around;
-        background-color: transparent;
+        background-color: #364dfe;
         position: fixed;
+        color: #fff;
         z-index: 12;
         width: 100%;
+
+        .menuIcon{
+            display: none;
+
+            @media screen and (max-width:768px){
+                display: grid;
+                font-size: 2.5rem;
+                cursor: pointer;
+            }
+        }
 
         ul{
             display: flex;
             list-style: none;
             padding: 0;
             gap: 20px;
+
+            @media screen and (max-width:768px){
+                display: none;
+            }
 
             li a{
                 cursor: pointer;
@@ -48,6 +64,15 @@ const Container = styled.div`
         align-items: end;
         width: 100%;
 
+        @media screen and (max-width:768px){
+            padding: 1rem 0;
+
+            h2{
+                font-size: 1rem;
+            }
+                
+            }
+
         a{
             padding: 10px 30px;
             border: none;
@@ -61,10 +86,19 @@ const Container = styled.div`
             padding: 0 5%;
             width: 40%;
 
+            @media screen and (max-width:768px){
+                width: 90%;
+                
+            }
+
             h1{
                 font-size: 4rem;
                 margin: 0;
                 line-height: 65px;
+                @media screen and (max-width:768px){
+                    font-size: 1.6rem;
+                    line-height: 30px;
+                }
             }
 
             p{
@@ -96,6 +130,9 @@ function Home() {
                 <h2>FVISION</h2>
             </div>
             <div className="menu">
+                <div className='menuIcon'>
+                    <IoMdMenu/>
+                </div>
                 <ul>
                     <li><Link to="home" smooth={true} duration={1000}>Home</Link></li>
                     <li><Link to="feature" smooth={true} duration={1000}>Features</Link></li>
@@ -109,13 +146,12 @@ function Home() {
         </div>
        
         <div className="banner">
-        <div>
-            <h1>Welcome to Finance Vision</h1>
-            <h2>Empower Your Financial Journey</h2>
-            <p>Finance Vision is your trusted partner in managing and optimizing your finances. With intuitive tools and insightful analytics, we help you take control of your money and achieve your financial goals.</p>
-            <a href="https://finance-vision.vercel.app/" target="_blank" rel="noopener noreferrer">Get Started</a>
-        </div>
-
+            <div>
+                <h1>Welcome to Finance Vision</h1>
+                <h2>Empower Your Financial Journey</h2>
+                <p>Finance Vision is your trusted partner in managing and optimizing your finances. With intuitive tools and insightful analytics, we help you take control of your money and achieve your financial goals.</p>
+                <a href="https://finance-vision.vercel.app/" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </div>
         </div>
     </Container>
   )

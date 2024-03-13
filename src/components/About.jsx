@@ -17,6 +17,10 @@ margin: auto;
         justify-content: space-between;
         padding: 5% 0;
 
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+        }
+
         .image{
             img{
                 width: 100%;
@@ -35,10 +39,25 @@ margin: auto;
       align-items: center;
       padding: 2rem 0;
 
+      @media screen and (max-width:768px){
+        padding: 0;
+      }
+
       .links{
         display: flex;
         align-items: center;
         gap: .3rem;
+
+        @media screen and (max-width:768px){
+         flex-direction: column;
+         gap: 0rem;
+
+         a{
+          flex: 1;
+          margin: 0;
+          width: 100%;
+         }
+      }
 
         a{
           background-color: blue;
@@ -70,8 +89,16 @@ margin: auto;
       display: flex;
       justify-content: space-between;
 
+      @media screen and (max-width: 768px){
+            flex-direction: column;
+        }
+
       img{
           box-shadow: 0 10px 40px #00000060;
+          
+          @media screen and (max-width: 768px){
+            width: 100%;
+        }
         }
 
       .content{
@@ -93,6 +120,11 @@ margin: auto;
           width: 100%;
           margin-top: 1rem;
 
+          @media screen and (max-width: 768px){
+            margin-top: 0.5rem;
+            align-items: center;
+          }
+
           div.social{
             display: flex;
             flex-direction: row;
@@ -101,6 +133,11 @@ margin: auto;
             gap: 2rem;
             width: 100%;
             margin-top: 1rem;
+
+            @media screen and (max-width: 768px){
+              margin-top: 0.5rem;
+              justify-content: center;
+          }
 
             a{
               color: #1f1e1e;
