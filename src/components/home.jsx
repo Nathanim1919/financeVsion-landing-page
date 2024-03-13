@@ -69,6 +69,8 @@ const Container = styled.div`
 
             h2{
                 font-size: 1rem;
+                margin: 0;
+                margin-bottom: 1rem;
             }
                 
             }
@@ -103,6 +105,11 @@ const Container = styled.div`
 
             p{
                 color: #b3aeae;
+                @media screen and (max-width:768px){
+                    font-size: .8rem;
+                    margin: 0;
+                    margin-bottom: 1rem;
+                }
             }
         }
     }
