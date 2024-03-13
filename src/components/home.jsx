@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 import DashboardImage from '../assets/m1.jpg'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
-import { IoMdMenu } from "react-icons/io";
+import { IoMdMenu, IoMdClose } from "react-icons/io";
+
 
 
 
@@ -21,6 +22,7 @@ const Container = styled.div`
         position: fixed;
         color: #fff;
         z-index: 12;
+        top: -.4rem;
         width: 100%;
 
         .menuIcon{
@@ -38,12 +40,28 @@ const Container = styled.div`
             list-style: none;
             padding: 0;
             gap: 20px;
+            transition: all .2s ease-in-out;
+
 
             @media screen and (max-width:768px){
-                display: none;
+                position: absolute;
+                background-color: #ffffff;
+                height: 100vh;
+                left: ${props => props.openMenu? '0%' : '-100%'};
+                flex-direction: column;
+                padding: 0 1rem;
+                width: 50vw;
+                align-items: center;
+                padding-top: 2rem;
+                box-shadow: 0 7px 24px rgba(0,0,0,.2);
+
+                li a{
+                    font-size: 1.3rem;
+                }
+
             }
 
-            li a{
+            a{
                 cursor: pointer;
                 color: #1e1d1d;
                 text-decoration: none;
@@ -142,21 +160,22 @@ const Container = styled.div`
 `
 
 function Home() {
+    const [openMenu, setOpenMenu] = useState(false)
   return (
-    <Container id='home'>
+    <Container openMenu={openMenu} id='home'>
         <div className="header">
             <div className="logo">
                 <h2>FVISION</h2>
             </div>
             <div className="menu">
-                <div className='menuIcon'>
+                {!openMenu?<div onClick={()=>setOpenMenu(true)} className='menuIcon'>
                     <IoMdMenu/>
-                </div>
+                </div>:<div onClick={()=>setOpenMenu(false)} className='menuIcon'><IoMdClose/></div>}
                 <ul>
-                    <li><Link to="home" smooth={true} duration={1000}>Home</Link></li>
-                    <li><Link to="feature" smooth={true} duration={1000}>Features</Link></li>
-                    <li><Link to="about" smooth={true} duration={1000}>About</Link></li>
-                    <li><Link to="contact" smooth={true} duration={1000}>Contact</Link></li>
+                    <li><Link onClick={()=>setOpenMenu(false)} to="home" smooth={true} duration={1000}>Home</Link></li>
+                    <li><Link onClick={()=>setOpenMenu(false)} to="feature" smooth={true} duration={1000}>Features</Link></li>
+                    <li><Link onClick={()=>setOpenMenu(false)} to="about" smooth={true} duration={1000}>About</Link></li>
+                    <li><Link onClick={()=>setOpenMenu(false)} to="contact" smooth={true} duration={1000}>Contact</Link></li>
                 </ul>
             </div>
         </div>
