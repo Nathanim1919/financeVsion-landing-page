@@ -51,9 +51,11 @@ const Container = styled.div`
                 align-items: center;
                 gap: 1rem;
                 padding: 0.4rem 1rem;
+                transition: all .3s ease-in-out;
 
                 &:hover{
                     background-color: #fff;
+                    color: #242323;
                 }
             }
 
