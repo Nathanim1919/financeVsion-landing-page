@@ -3,6 +3,9 @@ import DashboardImage from '../assets/m1.jpg'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { FaHome } from "react-icons/fa";
+import { MdFeaturedPlayList, MdContactPhone } from "react-icons/md";
+import { IoPersonSharp } from "react-icons/io5";
 
 
 
@@ -41,29 +44,69 @@ const Container = styled.div`
             padding: 0;
             gap: 20px;
             transition: all .2s ease-in-out;
+            color: #fff;
+
+            li{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 0.4rem 1rem;
+
+                &:hover{
+                    background-color: #fff;
+                }
+            }
+
+            .getStarted{
+                display: none;
+            }
 
 
             @media screen and (max-width:768px){
                 position: absolute;
-                background-color: #ffffff;
+                background-color: #ffffff85;
                 height: 100vh;
                 left: ${props => props.openMenu? '0%' : '-100%'};
                 flex-direction: column;
                 padding: 0 1rem;
                 width: 50vw;
-                align-items: center;
                 padding-top: 2rem;
                 box-shadow: 0 7px 24px rgba(0,0,0,.2);
+                color: #333;
+                font-weight: 600;
+                backdrop-filter: blur(10px);
+
+                li{
+                    &:hover{
+                    background-color: blue;
+                    color: #fff;
+
+                    a{
+                        color: #fff;
+                    }
+                }
+                }
+
+                
 
                 li a{
                     font-size: 1.3rem;
+                }
+
+                a.getStarted{
+                    display: grid;
+                    background-color: blue;
+                    color: #fff;
+                    padding: 0.5rem 1rem;
+                    box-shadow: 0 6px 23px rgba(0,0,0,.2);
+                    border-radius: 5px;
                 }
 
             }
 
             a{
                 cursor: pointer;
-                color: #1e1d1d;
+              
                 text-decoration: none;
             }
         }
@@ -172,10 +215,11 @@ function Home() {
                     <IoMdMenu/>
                 </div>:<div onClick={()=>setOpenMenu(false)} className='menuIcon'><IoMdClose/></div>}
                 <ul>
-                    <li><Link onClick={()=>setOpenMenu(false)} to="home" smooth={true} duration={1000}>Home</Link></li>
-                    <li><Link onClick={()=>setOpenMenu(false)} to="feature" smooth={true} duration={1000}>Features</Link></li>
-                    <li><Link onClick={()=>setOpenMenu(false)} to="about" smooth={true} duration={1000}>About</Link></li>
-                    <li><Link onClick={()=>setOpenMenu(false)} to="contact" smooth={true} duration={1000}>Contact</Link></li>
+                    <li><FaHome/><Link onClick={()=>setOpenMenu(false)} to="home" smooth={true} duration={1000}>Home</Link></li>
+                    <li><MdFeaturedPlayList/><Link onClick={()=>setOpenMenu(false)} to="feature" smooth={true} duration={1000}>Features</Link></li>
+                    <li><IoPersonSharp/><Link onClick={()=>setOpenMenu(false)} to="about" smooth={true} duration={1000}>About</Link></li>
+                    <li><MdContactPhone /><Link onClick={()=>setOpenMenu(false)} to="contact" smooth={true} duration={1000}>Contact</Link></li>
+                    <a className='getStarted' href="https://finance-vision.vercel.app/" target="_blank" rel="noopener noreferrer">Get Started</a>
                 </ul>
             </div>
         </div>
