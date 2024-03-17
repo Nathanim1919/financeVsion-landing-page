@@ -26,6 +26,14 @@ const FeatureContainer = styled.div`
         margin: 2rem 0;
         align-items: center;
 
+        .content{
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
         
         h2{
             display: flex;
