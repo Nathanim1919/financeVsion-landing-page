@@ -18,11 +18,11 @@ margin: auto;
         padding: 5% 0;
 
         a.school{
-          padding: 0.5rem 1.3rem;
+          padding: 0.2rem 1rem;
           background-color: #006aff;
           color: #fff;
           text-decoration: none;
-          margin: 0 1rem;
+          margin: 1rem;
           border-radius: 35px;
         }
 
