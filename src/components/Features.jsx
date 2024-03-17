@@ -3,6 +3,7 @@ import dashboardImage from '../assets/features/dashboard.png';
 import notificationImage from '../assets/features/notification.png';
 import transactionImage from '../assets/features/transaction.png';
 import goalImage from '../assets/features/goals.png';
+import chatImage from '../assets/features/chat.png';
 import blogImage from '../assets/features/blog.png';
 import  landingPageImage from '../assets/features/landingPage.png';
 import styled from 'styled-components';
@@ -128,6 +129,18 @@ export default function Features() {
                         Blog</h2>
                     <p>Learn and grow with our financial blog. Our blog feature offers valuable insights, tips, and advice on personal finance and money management.</p>
                 </div>
+            </div>
+            <div className="feature">
+                <div className="image">
+                    <img src={chatImage} alt="Blog" />
+                </div>
+                <div className="content">
+                    <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                       <ellipse cx="32" cy="61" opacity=".3" rx="19" ry="3"></ellipse><path fill="#37d0ee" d="M46,37H18V10c0-2.209,1.791-4,4-4h20c2.209,0,4,1.791,4,4V37z"></path><path fill="#008aa9" d="M39.5,15h-15c-0.828,0-1.5-0.672-1.5-1.5v0c0-0.828,0.672-1.5,1.5-1.5h15c0.828,0,1.5,0.672,1.5,1.5	v0C41,14.328,40.328,15,39.5,15z"></path><path fill="#bd6300" d="M12,36H6c-1.105,0-2-0.895-2-2v-4c0-1.105,0.895-2,2-2h6V36z"></path><path fill="#bd6300" d="M52,28h6c1.105,0,2,0.895,2,2v4c0,1.105-0.895,2-2,2h-6V28z"></path><path fill="#008aa9" d="M33.5,21h-9c-0.828,0-1.5-0.672-1.5-1.5v0c0-0.828,0.672-1.5,1.5-1.5h9c0.828,0,1.5,0.672,1.5,1.5v0	C35,20.328,34.328,21,33.5,21z"></path><path fill="orange" d="M36,27L36,27c0,1.657,1.343,3,3,3h0.5c1.381,0,2.5,1.119,2.5,2.5v0c0,1.381-1.119,2.5-2.5,2.5h-15	c-1.381,0-2.5-1.119-2.5-2.5v0c0-1.381,1.119-2.5,2.5-2.5H25c1.657,0,3-1.343,3-3v0c0-1.657-1.343-3-3-3H14c-2.209,0-4,1.791-4,4v22	c0,2.209,1.791,4,4,4h36c2.209,0,4-1.791,4-4V28c0-2.209-1.791-4-4-4H39C37.343,24,36,25.343,36,27z"></path><path fill="#fff" d="M18,29c2.762,0,5-2.238,5-5V10c0-1.582-0.749-2.975-1.895-3.891	C19.328,6.517,18,8.1,18,10v14h-4c-1.9,0-3.483,1.328-3.891,3.105C11.025,28.251,12.418,29,14,29H18z" opacity=".3"></path><circle cx="20" cy="41" r="2" fill="#bd6300"></circle><circle cx="28" cy="41" r="2" fill="#bd6300"></circle><circle cx="36" cy="41" r="2" fill="#bd6300"></circle><circle cx="44" cy="41" r="2" fill="#bd6300"></circle><circle cx="24" cy="47" r="2" fill="#bd6300"></circle><circle cx="32" cy="47" r="2" fill="#bd6300"></circle><circle cx="40" cy="47" r="2" fill="#bd6300"></circle><path d="M54,50V36c-2.762,0-5,2.238-5,5v7c0,0.552-0.448,1-1,1h-9c-2.762,0-5,2.238-5,5h16	C52.209,54,54,52.209,54,50z" opacity=".15"></path><path fill="#fff" d="M21.5,18c-0.828,0-1.5-0.672-1.5-1.5v-4c0-0.828,0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5v4	C23,17.328,22.328,18,21.5,18z"></path>
+                    </svg>
+                    Chat with AI</h2>
+                    <p>Connect with our AI chatbot for instant assistance and guidance. Whether you have questions about finance or need advice, our AI is here to help you 24/7.</p>                </div>
             </div>
 
             <div className="feature">
