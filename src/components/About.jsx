@@ -219,7 +219,11 @@ const AboutSection = () => {
                     <p>Full Stack Developer</p>
                   </div>
                   <div>
-                    <p>Highly motivated Full Stack Developer with a Computer Science degree seeking to leverage backend development expertise. Currently enrolled in the Full Stack Software Engineering program at ALX Africa to further specialize in back-end technologies. Proficient in JavaScript, Node.js, the MERN stack </p>
+                    <p>Of course, here's the updated version:
+
+---
+
+Hello! I'm Nathanim, a Full Stack Developer with a strong focus on backend development. Currently advancing my skills in Full Stack Software Engineering at ALX Africa, I specialize in crafting efficient backend solutions. With experience in developing both frontend and full stack applications, I bring a well-rounded perspective to every project. Proficient in JavaScript, Node.js, and the MERN stack, I'm dedicated to creating meaningful and impactful software solutions. Let's collaborate and bring ideas to life!</p>
                     <div className="contactme">
                       <h2>Contact me</h2>
                       <div className="social">
