@@ -17,6 +17,15 @@ margin: auto;
         justify-content: space-between;
         padding: 5% 0;
 
+        a.school{
+          padding: 0.5rem 1.3rem;
+          background-color: #006aff;
+          color: #fff;
+          text-decoration: none;
+          margin: 0 1rem;
+          border-radius: 35px;
+        }
+
         @media screen and (max-width: 768px){
             flex-direction: column;
         }
@@ -189,7 +198,7 @@ const AboutSection = () => {
               Inspired by the burgeoning field of fintech and driven by our collective vision for financial inclusion, our team embarked on this journey to create a user-centric platform that simplifies financial management and fosters financial literacy. Our mission is to bridge the gap between traditional banking systems and modern digital solutions, making financial empowerment accessible to all.
             </p>
             <p>
-              Developed as a Portfolio Project for Holberton School, this endeavor reflects our commitment to excellence in software development and our aspiration to contribute meaningfully to the fintech landscape. To learn more about our journey and motivations, visit our Holberton School <a href="https://www.holbertonschool.com/" target="_blank" rel="noopener noreferrer">portfolio</a>.
+              Developed as a Portfolio Project for Holberton School, this endeavor reflects our commitment to excellence in software development and our aspiration to contribute meaningfully to the fintech landscape. To learn more about our journey and motivations, visit our Holberton School <a className='school' href="https://www.holbertonschool.com/" target="_blank" rel="noopener noreferrer">portfolio</a>.
             </p>
           </div>
         </div>
