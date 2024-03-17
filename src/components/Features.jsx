@@ -137,7 +137,7 @@ export default function Features() {
                 </div>
                 <div className="content">
                     <h2>
-                    <img src="https://icons8.com/icon/GBu1KXnCZZ8j/robot" alt="" />
+                    <img src={chatAiImage} alt="" />
                     Chat with AI</h2>
                     <p>Connect with our AI chatbot for instant assistance and guidance. Whether you have questions about finance or need advice, our AI is here to help you 24/7.</p>                </div>
             </div>
