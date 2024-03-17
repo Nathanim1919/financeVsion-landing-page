@@ -28,8 +28,8 @@ const FeatureContainer = styled.div`
 
         .content{
             img{
-                width: 100%;
-                height: 100%;
+                width: 5rem;
+                height: 5rem;
                 object-fit: cover;
             }
         }
