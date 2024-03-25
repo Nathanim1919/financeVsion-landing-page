@@ -200,7 +200,7 @@ const AboutSection = () => {
             <p>
               Developed as a Portfolio Project for Holberton School, this endeavor reflects our commitment to excellence in software development and our aspiration to contribute meaningfully to the fintech landscape. To learn more about our journey and motivations, visit our Holberton School 
             </p>
-              <a className='school' href="https://www.holbertonschool.com/" target="_blank" rel="noopener noreferrer">Holberton Schoo</a>.
+              <a className='school' href="https://www.holbertonschool.com/" target="_blank" rel="noopener noreferrer">Holberton School</a>.
           </div>
         </div>
         <div className="image">
