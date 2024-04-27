@@ -239,7 +239,7 @@ Hello! I'm Nathanim, a Full Stack Developer with a strong focus on backend devel
                   </p>
                   <div className="links">
                     <a href="https://github.com/Nathanim1919/FinanceVision" target="_blank" rel="noopener noreferrer"><FaGithub/>GitHub repository</a>.
-                    <a href="https://finance-vision.vercel.app/" target="_blank" rel="noopener noreferrer"><CgWebsite/>Live Preview</a>.
+                    <a href="https://fvision.nathanim.me" target="_blank" rel="noopener noreferrer"><CgWebsite/>Live Preview</a>.
                   </div>
                 </div>
           </div>

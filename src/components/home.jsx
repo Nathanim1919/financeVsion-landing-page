@@ -221,7 +221,7 @@ function Home() {
                     <li><MdFeaturedPlayList/><Link onClick={()=>setOpenMenu(false)} to="feature" smooth={true} duration={1000}>Features</Link></li>
                     <li><IoPersonSharp/><Link onClick={()=>setOpenMenu(false)} to="about" smooth={true} duration={1000}>About</Link></li>
                     <li><MdContactPhone /><Link onClick={()=>setOpenMenu(false)} to="contact" smooth={true} duration={1000}>Contact</Link></li>
-                    <a className='getStarted' href="https://finance-vision.vercel.app/" target="_blank" rel="noopener noreferrer">Get Started</a>
+                    <a className='getStarted' href="https://fvision.nathanim.me" target="_blank" rel="noopener noreferrer">Get Started</a>
                 </ul>
             </div>
         </div>
