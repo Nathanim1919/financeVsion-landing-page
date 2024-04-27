@@ -234,7 +234,7 @@ function Home() {
                 <h1>Welcome to Finance Vision</h1>
                 <h2>Empower Your Financial Journey</h2>
                 <p>Finance Vision is your trusted partner in managing and optimizing your finances. With intuitive tools and insightful analytics, we help you take control of your money and achieve your financial goals.</p>
-                <a href="https://finance-vision.vercel.app/" target="_blank" rel="noopener noreferrer">Get Started</a>
+                <a href="https://fvision.nathanim.me" target="_blank" rel="noopener noreferrer">Get Started</a>
             </div>
         </div>
     </Container>
