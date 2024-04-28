@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import DashboardImage from '../assets/m1.jpg'
 import PhoneImage from '../assets/phone.png'
+import Phone2Image from '../assets/phone2.png'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 import { IoMdMenu, IoMdClose } from "react-icons/io";
@@ -209,6 +210,16 @@ const Container = styled.div`
             box-shadow: 0px 5px 30px #00000031;
         }
 
+        img.phone2Image{
+            position: absolute;
+            top: -13%;
+            left: -27%;
+            width: 240px;
+            height: auto;
+            z-index: 1;
+            box-shadow: 0px 5px 30px #00000031;
+        }
+
         @media screen and (max-width:768px){
             width: 98vw;
             top: -7%;
@@ -218,7 +229,14 @@ const Container = styled.div`
                 width: 200%;
                 height: 200%;
                 box-shadow: 0px 5px 30px #00000031;
-        }
+          }
+          img.phoneImage{
+            width: 50vw;
+          }
+
+          img.phone2Image{
+            display: none;
+          }
         }
     
     }
@@ -246,6 +264,7 @@ function Home() {
             </div>
         </div>
         <div className='image'>
+            <img className='phone2Image' src={Phone2Image} alt="Phone" />
             <img src={DashboardImage} alt="Dashboard" />
             <img className='phoneImage' src={PhoneImage} alt="Phone" />
         </div>
