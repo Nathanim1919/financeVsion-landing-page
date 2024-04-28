@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import DashboardImage from '../assets/m1.jpg'
+import PhoneImage from '../assets/phone.png'
 import styled from 'styled-components'
 import { Link } from 'react-scroll'
 import { IoMdMenu, IoMdClose } from "react-icons/io";
@@ -126,6 +127,15 @@ const Container = styled.div`
         place-items: start;
         align-items: end;
         width: 100%;
+        z-index: 20;
+
+        .blue{
+            color: #707eff;
+        }
+
+        .orange{
+            color: #d0ff50;
+        }
 
         @media screen and (max-width:768px){
             padding: 1rem 0;
@@ -189,6 +199,16 @@ const Container = styled.div`
             box-shadow: 0px 5px 30px #00000031;
         }
 
+        img.phoneImage{
+            position: absolute;
+            top: 10%;
+            right: -20%;
+            width: 240px;
+            height: auto;
+            z-index: 1;
+            box-shadow: 0px 5px 30px #00000031;
+        }
+
         @media screen and (max-width:768px){
             width: 98vw;
             top: -7%;
@@ -226,12 +246,13 @@ function Home() {
             </div>
         </div>
         <div className='image'>
-        <img src={DashboardImage} alt="Dashboard" />
+            <img src={DashboardImage} alt="Dashboard" />
+            <img className='phoneImage' src={PhoneImage} alt="Phone" />
         </div>
        
         <div className="banner">
             <div>
-                <h1>Welcome to Finance Vision</h1>
+                <h1>Welcome to <span className='blue'>Finance</span> <span className='orange'>Vision</span></h1>
                 <h2>Empower Your Financial Journey</h2>
                 <p>Finance Vision is your trusted partner in managing and optimizing your finances. With intuitive tools and insightful analytics, we help you take control of your money and achieve your financial goals.</p>
                 <a href="https://fvision.nathanim.me" target="_blank" rel="noopener noreferrer">Get Started</a>
