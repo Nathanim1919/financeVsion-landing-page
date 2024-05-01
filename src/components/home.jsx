@@ -69,8 +69,8 @@ const Container = styled.div`
 
 
             @media screen and (max-width:768px){
-                position: absolute;
-                background-color: #ffffff85;
+                position: fixed;
+                background-color: #ffffff;
                 height: 100vh;
                 left: ${props => props.openMenu? '0%' : '-100%'};
                 flex-direction: column;
@@ -80,6 +80,8 @@ const Container = styled.div`
                 box-shadow: 0 7px 24px rgba(0,0,0,.2);
                 color: #333;
                 font-weight: 600;
+                top: -2rem;
+                bottom: 0;
                 backdrop-filter: blur(10px);
 
                 li{
@@ -195,7 +197,7 @@ const Container = styled.div`
         padding: 0rem;
         place-self: center;
         position: relative;
-        top: 3%;
+        top: -10%;
         img{
             width: 100%;
             height: 100%;
