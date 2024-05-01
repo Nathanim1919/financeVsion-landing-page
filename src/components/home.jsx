@@ -23,12 +23,14 @@ const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-around;
-        background-color: #364dfe;
+        background: linear-gradient(to bottom,#fff, transparent);
         position: fixed;
-        color: #fff;
+        color: #333;
         z-index: 12;
         top: -.4rem;
         width: 100%;
+        position: relative;
+        z-index: 100;
 
         .menuIcon{
             display: none;
@@ -46,7 +48,7 @@ const Container = styled.div`
             padding: 0;
             gap: 20px;
             transition: all .2s ease-in-out;
-            color: #fff;
+            color: #333;
 
             li{
                 display: flex;
