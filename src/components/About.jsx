@@ -198,7 +198,7 @@ const AboutSection = () => {
               Inspired by the burgeoning field of fintech and driven by our collective vision for financial inclusion, our team embarked on this journey to create a user-centric platform that simplifies financial management and fosters financial literacy. Our mission is to bridge the gap between traditional banking systems and modern digital solutions, making financial empowerment accessible to all.
             </p>
             <p>
-              Developed as a Portfolio Project for Holberton School, this endeavor reflects our commitment to excellence in software development and our aspiration to contribute meaningfully to the fintech landscape. To learn more about our journey and motivations, visit our Holberton School 
+              Developed as a Portfolio Project for Holberton School, this endeavor reflects our commitment to excellence in software development and our aspiration to contribute meaningfully to the fintech landscape. To learn more about our journey and motivations, visit our Holberton School
             </p>
               <a className='school' href="https://www.holbertonschool.com/" target="_blank" rel="noopener noreferrer">Holberton School</a>.
           </div>
@@ -235,11 +235,11 @@ Hello! I'm Nathanim, a Full Stack Developer with a strong focus on backend devel
 
                 <div className="footer">
                   <p>
-                    For code collaboration and contributions, visit our 
+                    For code collaboration and contributions, visit our
                   </p>
                   <div className="links">
                     <a href="https://github.com/Nathanim1919/FinanceVision" target="_blank" rel="noopener noreferrer"><FaGithub/>GitHub repository</a>.
-                    <a href="https://fvision.nathanim.me" target="_blank" rel="noopener noreferrer"><CgWebsite/>Live Preview</a>.
+                    <a href="https://nathanimt.me/" target="_blank" rel="noopener noreferrer"><CgWebsite/>Live Preview</a>.
                   </div>
                 </div>
           </div>

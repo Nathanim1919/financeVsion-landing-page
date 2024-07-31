@@ -272,13 +272,13 @@ function Home() {
             <img src={DashboardImage} alt="Dashboard" />
             <img className='phoneImage' src={PhoneImage} alt="Phone" />
         </div>
-       
+
         <div className="banner">
             <div>
                 <h1>Welcome to <span className='blue'>Finance</span> <span className='orange'>Vision</span></h1>
                 <h2>Empower Your Financial Journey</h2>
                 <p>Finance Vision is your trusted partner in managing and optimizing your finances. With intuitive tools and insightful analytics, we help you take control of your money and achieve your financial goals.</p>
-                <a href="https://fvision.nathanim.me" target="_blank" rel="noopener noreferrer">Get Started</a>
+                <a href="https://nathanimt.me/" target="_blank" rel="noopener noreferrer">Get Started</a>
             </div>
         </div>
     </Container>
